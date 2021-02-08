@@ -1,0 +1,245 @@
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.header {
+  position: relative;
+  height: auto;
+  /* border: 1px solid red; */
+  border-bottom: 2px solid #cbcbcb;
+  z-index: 100;
+  padding: 10px 20px;
+}
+
+.header h1 {
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.header .login {
+  background-color: #6558f5;
+  color: #fff;
+  border-radius: 5px;
+  width: 80px;
+  height: 28px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  margin-top: 50px;
+}
+
+.article .left_flex {
+  width: 80%;
+}
+.article .left_flex .table-01 {
+  margin: 0px 40px 80px 20px;
+}
+.article .right_flex {
+  width: 17%;
+  border: 2px solid #cbcbcb;
+  padding: 15px;
+}
+
+.table-01 h2 {
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 3px solid #cbcbcb;
+  padding-bottom: 15px;
+}
+
+table {
+  margin-top: 25px;
+  width: 83%;
+}
+table tr th {
+  border: 1px solid #cbcbcb;
+  border-top: none;
+}
+table tr th:first-child {
+  border-left: none;
+  border-top: none;
+}
+table tr th:last-child {
+  border-right: none;
+  border-top: none;
+}
+
+.article .table-01 th {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.article .table-01 td {
+  font-size: 14px;
+  border-bottom: 1px solid #cbcbcb;
+  padding: 10px 0;
+  text-indent: 1em;
+}
+
+.login_inner {
+  position: relative;
+}
+.login_inner input {
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  padding: 6px 6px;
+  margin-bottom: 10px;
+}
+
+.login_inner .login_on_off {
+  height: 30px;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.login_inner button {
+  background-color: #6558f5;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.login_inner a {
+  display: inline-block;
+}
+.login_inner .a_out {
+  text-align: center;
+}
+/* on off style{} */
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 28px;
+  border-radius: 17px;
+  background-color: #ddd;
+  transition-duration: 0.2s;
+  top: 0;
+  right: 0;
+}
+
+label span {
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition-duration: 0.2s;
+}
+
+label:before,
+label:after {
+  position: absolute;
+  top: 0;
+  width: 34px;
+  font-size: 11px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+}
+
+label:before {
+  left: 0;
+  content: "ON";
+}
+
+label:after {
+  right: 0;
+  content: "OFF";
+}
+
+input:checked + label {
+  background-color: #00c73c;
+}
+
+input:checked + label span {
+  transform: translateX(26px);
+}
+
+/*on off style{}*/
+
+/* Ã¬â€¢Å’Ã«Â¦Â¼Ã¬Â°Â½ */
+
+.my_news .text {
+  margin: 15px 0 10px 0;
+}
+.my_news p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 15px 0;
+}
+
+.my_news div {
+  font-size: 14px;
+  border: 1px solid #cbcbcb;
+  margin-bottom: 10px;
+  padding: 5px 4px;
+  letter-spacing: -2px;
+}
+
+.my_news > div {
+  position: relative;
+}
+.my_news .news_close {
+  background: url("../image/button_x.png") no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: -10px;
+  right: -9px;
+  /* background: red; */
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* ëž­í‚¹ ë¦¬ìŠ¤íŠ¸ */
+
+.rank_list {
+  position: relative;
+  border: 1px solid #cbcbcb;
+  width: 100%;
+}
+
+.rank_list tr th {
+  font-weight: bold;
+}
+.rank_list tr td {
+  text-align: center;
+}
+.rank_list tr th,
+.rank_list tr td {
+  border: 1px solid #cbcbcb;
+  padding: 8px 0px;
+}
