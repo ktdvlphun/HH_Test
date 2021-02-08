@@ -90,7 +90,7 @@ table tr th:last-child {
   padding: 10px 0;
   text-indent: 1em;
 }
-
+/* on off style{} */
 .login_inner {
   position: relative;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HH-group</title>
+    <title>HH-group-메인페이지</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -92,14 +92,16 @@
             </div>
             <div class="right_flex">
                 <div class="login_inner">
-                    <input type="text" id="id" name="id" placeholder="아이디">
-                    <input type="text" id="id" name="id" placeholder="비밀번호">
-                    <div class="login_on_off">
-                        <span>로그인 유지</span>
-                        <input type="checkbox" id="checkbox" checked>
-                        <label for="checkbox"><span></span></label>
-                    </div>
-                    <button type="button" id="login_button" name="login_button">로그인</button>
+                    <form action="" id="user_login" name="user_login" method="POST" >
+                        <input type="text" id="u_id" name="u_id" placeholder="아이디">
+                        <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호">
+                        <div class="login_on_off">
+                            <span>로그인 유지</span>
+                            <input type="checkbox" id="checkbox" checked>
+                            <label for="checkbox"><span></span></label>
+                        </div>
+                        <button type="button" id="login_button" name="login_button">로그인</button>
+                    </form>
                     <div class="a_out">
                         <a href="_blank">아이디/비밀번호찾기</a>
                     </div>
