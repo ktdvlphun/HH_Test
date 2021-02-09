@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .article {
@@ -43,15 +44,47 @@ body {
 }
 
 .article .left_flex {
-  width: 80%;
+  width: 15%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
 }
-.article .left_flex .table-01 {
-  margin: 0px 40px 80px 20px;
+.article .left_flex table {
+  width: 100%;
+}
+.article .left_flex table td {
+  border: 2px solid #cbcbcb;
+  box-sizing: border-box;
+  padding: 10px 8px;
+}
+.article .left_flex table td:hover {
+  background: #cbcbcb;
+  color: #fff;
+}
+.article .middle_flex {
+  width: 85%;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+.article .flex_cont {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.article .flex_cont .text {
+  width: 100%;
+}
+
+.article .text-b {
+  font-weight: bold;
+  font-size: 18px;
 }
 .article .right_flex {
-  width: 17%;
+  width: 20%;
   border: 2px solid #cbcbcb;
   padding: 15px;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .table-01 h2 {
@@ -65,15 +98,15 @@ table {
   margin-top: 25px;
   width: 83%;
 }
-table tr th {
+.right_flex table tr th {
   border: 1px solid #cbcbcb;
   border-top: none;
 }
-table tr th:first-child {
+.right_flex table tr th:first-child {
   border-left: none;
   border-top: none;
 }
-table tr th:last-child {
+.right_flex table tr th:last-child {
   border-right: none;
   border-top: none;
 }
@@ -187,7 +220,7 @@ input:checked + label span {
 
 /*on off style{}*/
 
-/* Ã¬â€¢Å’Ã«Â¦Â¼Ã¬Â°Â½ */
+/* ÃƒÆ’Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢Ãƒâ€¦Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â«Ãƒâ€šÃ‚Â¦Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã‚Â¬Ãƒâ€šÃ‚Â°Ãƒâ€šÃ‚Â½ */
 
 .my_news .text {
   margin: 15px 0 10px 0;
@@ -221,9 +254,10 @@ input:checked + label span {
   /* background: red; */
   background-color: #fff;
   z-index: 1;
+  margin: 0;
 }
 
-/* ëž­í‚¹ ë¦¬ìŠ¤íŠ¸ */
+/* ÃƒÂ«Ã…Â¾Ã‚Â­ÃƒÂ­Ã¢â‚¬Å¡Ã‚Â¹ ÃƒÂ«Ã‚Â¦Ã‚Â¬ÃƒÂ¬Ã…Â Ã‚Â¤ÃƒÂ­Ã…Â Ã‚Â¸ */
 
 .rank_list {
   position: relative;
@@ -241,4 +275,79 @@ input:checked + label span {
 .rank_list tr td {
   border: 1px solid #cbcbcb;
   padding: 8px 0px;
+}
+
+.border_b {
+  border-bottom: 3px solid #cbcbcb;
+  /* margin-bottom: 20px; */
+}
+.image {
+  margin: 20px 20px 0px 0;
+  background: red;
+  width: 200px;
+  height: 200px;
+}
+
+.middle_flex > div {
+  margin-bottom: 20px;
+}
+button {
+  background-color: #6558f5;
+  color: #fff;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 31px;
+  margin: 10px 5px;
+}
+
+/* Ã«Å’â€œÃªÂ¸â‚¬Ã¬Â°Â½ */
+.notice table {
+  border: 1px solid #cbcbcb;
+  box-sizing: border-box;
+  width: 100%;
+}
+.notice table th {
+  text-align: left;
+  padding: 5px;
+}
+.notice table td {
+  text-align: left;
+}
+.notice table input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* ÃªÂ²Å’Ã¬â€¹Å“Ã­Å’Â Ã«Â¦Â¬Ã¬Å Â¤Ã­Å Â¸ */
+.board {
+  border: 1px solid #cbcbcb;
+  width: 100%;
+  padding: 15px 10px;
+  box-sizing: border-box;
+}
+
+.board table {
+  width: 100%;
+}
+
+.board table th {
+  font-weight: bold;
+}
+.board table th,
+.board table td {
+  padding: 5px 10px;
+  border: 1px solid #cbcbcb;
+  text-align: left;
+}
+
+.board .list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 10px auto 0 auto;
 }

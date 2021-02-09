@@ -49,3 +49,21 @@ table {
 button{
     background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer
 }
+
+.flex_cont{
+	display: flex;
+	justify-content: space-between;
+}
+
+.ti{
+	text-indent: 0.5em;
+
+}
+.ti-01{
+	text-indent: 1em;
+}
+
+.flex_cont_end{
+	display: flex;
+	justify-content: flex-end;
+}

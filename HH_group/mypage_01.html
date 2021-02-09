@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HH-group-메인페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mypage_01.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>HH 블로그</h1>
+        <button class="login">로그인</button>
+    </header>
+    <section class="section">
+        <article class="article">
+            <div class="left_flex">
+                <table>
+                    <tr>
+                        <td>내 블로그</td>
+                    </tr>
+                    <tr>
+                        <td>내가쓴글</td>
+                    </tr>
+                    <tr>
+                        <td>내정보</td>
+                    </tr>
+                    <tr>
+                        <td>정보4</td>
+                    </tr>
+                    <tr>
+                        <td>정보5</td>
+                    </tr>
+                    <tr>
+                        <td>정보6</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="middle_flex">
+                <div class="border_b">
+                    <div class="flex_cont">
+                        <div class="text text-b">내 정보</div>
+                    </div>
+                </div>
+                <div class="flex_cont" style="margin-bottom: 0;">
+                    <div style="width: 30%;">
+                        <div class="image"></div>
+                    </div>
+                    <div style="width: 70%;">
+                        <div style="margin-left: 37px;">사용자명</div>
+                        <div class="flex_cont">
+                            <div style="text-align: center;">생일</div>
+                            <div><input type="text" id="birthday " name="birthday"></div>
+                            <div><button>변경</button></div>
+                        </div>
+                        <div class="flex_cont">
+                            <div style="text-align: center;">성별</div>
+                            <div>
+                                <select class="s_button" name="uemail_sel" id="uemail_sel">
+                                    <option value="m">남</option>
+                                    <option value="w">여</option>
+                                </select>
+                            </div>
+                            <div><button>변경</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border_b">
+                    <div class="flex_cont">
+                        <div class="text text-b">개인 정보</div>
+                    </div>
+                </div>
+                <div class="my-02">
+                    <div class="flex_cont">
+                        <div class="pb-10">휴대폰번호</div>
+                        <div class="flex_cont">
+                            <div>
+                                <select class="s_button" name="unum" id="unum">
+                                    <option value="o">010</option>
+                                    <option value="t">011</option>
+                                </select>
+                            </div>
+                            <div><input type="text" style="width: 70%;"></div>
+                            <div><button>변경</button></div>
+                        </div>
+                    </div>
+                    <div class="flex_cont">
+                        <div class="pb-10">이메일</div>
+                        <div class="flex_cont">
+                            <div> <input type="text"></div>
+                            <div> <input type="text"></div>
+                            <div>
+                                <select class="s_button" name="uemail_sel" id="uemail_sel">
+                                    <option value="직접입력">직접입력</option>
+                                    <option value="@naver.com">네이버</option>
+                                    <option value="@daum.net">다음</option>
+                                    <option value="@gmail.com">지메일</option>
+                                </select>
+                            </div>
+                            <div><button>변경</button></div>
+                        </div>
+                    </div>
+                    <div class="flex_cont">
+                        <div class="pb-10">닉네임</div>
+                        <div class="flex_cont">
+                            <div><input type="text" ></div>
+                            <div><button>변경</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="right_flex">
+                <div class="login_inner">
+                    <form action="" id="user_login" name="user_login" method="POST">
+                        <input type="text" id="u_id" name="u_id" placeholder="아이디">
+                        <input type="password" id="u_pw" name="u_pw" placeholder="비밀번호">
+                        <div class="login_on_off">
+                            <span>로그인 유지</span>
+                            <input type="checkbox" id="checkbox" checked>
+                            <label for="checkbox"><span></span></label>
+                        </div>
+                        <button type="button" id="login_button" name="login_button">로그인</button>
+                    </form>
+                    <div class="a_out">
+                        <a href="_blank">아이디/비밀번호찾기</a>
+                    </div>
+                </div>
+                <div class="my_news">
+                    <p class="text">내소식</p>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                    <div>
+                        <span>홍길동 님이 댓글을 달았습니다.</span>
+                        <button type="button" class="news_close" id="news_close" name="news_close"></button>
+                    </div>
+                </div>
+                <h2 class="hidden">랭킹</h2>
+                <table class="rank_list">
+                    <tr>
+                        <th>접속자</th>
+                        <th>등급</th>
+                    </tr>
+                    <tr>
+                        <td>이름#1</td>
+                        <td>씨앗</td>
+                    </tr>
+                    <tr>
+                        <td>이름#2</td>
+                        <td>새싹</td>
+                    </tr>
+                    <tr>
+                        <td>이름#3</td>
+                        <td>화분</td>
+                    </tr>
+                    <tr>
+                        <td>이름#4</td>
+                        <td>꽃</td>
+                    </tr>
+                    <tr>
+                        <td>이름#5</td>
+                        <td>씨앗</td>
+                    </tr>
+                    <tr>
+                        <td>이름#6</td>
+                        <td>씨앗</td>
+                    </tr>
+                    <tr>
+                        <td>이름#7</td>
+                        <td>씨앗</td>
+                    </tr>
+                </table>
+            </div> -->
+        </article>
+        <aside></aside>
+    </section>
+    <!-- <footer class="footer"></footer> -->
+</body>
+<script src="./js/index.js"></script>
+
+</html>

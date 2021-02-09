@@ -17,7 +17,6 @@ header h1 {
 .container {
   width: 768px;
   margin: 0 auto 0 auto;
-
 }
 
 .content {
@@ -35,17 +34,14 @@ header h1 {
   border-radius: 8px;
 }
 
-
-
 .login_inner {
   position: relative;
 }
 .login_inner input {
   border: 1px solid #cbcbcb;
   border-radius: 4px;
-  padding: 12px 0px;
-  /* margin-bottom: 10px; */
-  /* margin-bottom: 10px; */
+  padding: 12px 12px;
+  box-sizing: border-box;
   margin: auto auto 10px auto;
 }
 
@@ -57,12 +53,16 @@ header h1 {
   align-items: center;
 }
 
+.login_on_off .text {
+  font-size: 16px;
+}
+
 .login_inner button {
   background-color: #6558f5;
   color: #fff;
   border-radius: 5px;
   width: 100%;
-  height: 26px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,4 +73,81 @@ header h1 {
 }
 .login_inner .a_out {
   text-align: center;
+}
+/* on off style{} */
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 28px;
+  border-radius: 17px;
+  background-color: #ddd;
+  transition-duration: 0.2s;
+  top: 0;
+  right: 0;
+}
+
+label span {
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition-duration: 0.2s;
+}
+
+label:before,
+label:after {
+  position: absolute;
+  top: 0;
+  width: 34px;
+  font-size: 11px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+}
+
+label:before {
+  left: 0;
+  content: "ON";
+}
+
+label:after {
+  right: 0;
+  content: "OFF";
+}
+
+input:checked + label {
+  background-color: #00c73c;
+}
+
+input:checked + label span {
+  transform: translateX(26px);
+}
+
+/*on off style{}*/
+
+.flex_cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+}
+
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
 }
